@@ -9,14 +9,16 @@
   ],
   "scripts": {
     "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "node server.js",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "heroku-postbuild": "gatsby build --prod"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.6",
+    "express": "^4.17.3",
     "gatsby": "^4.9.0",
     "gatsby-plugin-image": "^2.9.0",
     "gatsby-plugin-manifest": "^4.9.0",
@@ -25,6 +27,7 @@
     "gatsby-plugin-styled-components": "^5.9.0",
     "gatsby-source-filesystem": "^4.9.0",
     "gatsby-transformer-sharp": "^4.9.0",
+    "path": "^0.12.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
